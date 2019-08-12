@@ -14,22 +14,31 @@ body {
 	display: block;
 	clear: both;
 }
-[class*="col-"] {
-	float: left;
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 .col-md-3 {
 	width: 25%;
 }
-.col-md-6 {
-	width: 50%;
-}
+
 .header {
 	background-color: rgba(255,255,255,0.75);
-	padding: 25px 0;
+}
+.menu {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 0;
+	margin: 0 auto;
+	height: 100px;
+	width: 570px;
 }
 .menu li {
 	width: 25%;
-	float: left;
 	border-left: 1px solid #2c71b8;
 }
 .menu li:last-child {
@@ -60,7 +69,6 @@ body {
 	position: relative;
 }
 .basket {
-	margin-top: 5px;
 	width: 40px;
 	height: 40px;
 	background-color: white;
@@ -98,7 +106,7 @@ body {
 	 height: 40px;
 	 border:1px solid #2c71b8;
 	 margin-left: 30px;
-	 margin-top: 5px;
+	 margin-right: 30px;
 }
 
 .searchbar input {
@@ -120,7 +128,13 @@ body {
   	border: none;
   	background-color: #2c71b8;
 }
-.col-md-3 input::placeholder {
+.col-md-6 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+.col-md-6 input::placeholder {
 	color: #2c71b8;
 	font-size: 21px;
 	font-weight: 300;
