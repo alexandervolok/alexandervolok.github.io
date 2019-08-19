@@ -150,6 +150,7 @@ body {
 	list-style-type: none;
 	position: absolute;
 	left: -1px;
+	z-index: 900;
 }
 
 li:hover .submenu {
@@ -174,4 +175,146 @@ li:hover .submenu {
 .menu > li:hover > a {
 	color: white;
 	background-color: #2c71b8;
+}
+
+.main-container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.main-grid {
+	display: grid;
+	grid-template-columns: 270px 900px;
+}
+
+.col-main3 {
+	height: 843px;
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	opacity: 0.2;
+}
+
+.col-main9 {
+	display: grid;
+	grid-template-columns: 270px 270px 270px;
+	grid-template-rows: 652px 652px 652px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	padding-left: 30px;
+	padding-top: 167px;
+}
+
+.prod-img {
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	opacity: 0.7;
+	height: 180px;
+	position: relative;
+}
+
+.pic-scale {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #2c71b8;
+	background: url('images/icon (8).png') no-repeat;
+	background-position: center center;
+}
+
+.like {
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #2c71b8;
+	background: url('images/icon (5).png') no-repeat;
+	background-position: center center;
+}
+
+.prod-img > img {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.col-main9 > div {
+	border: 1px solid #ffffff;
+	background-color: #2c71b8;
+	opacity: 0.8;
+}
+.prod-name {
+	color: white;
+	font-size: 30px;
+	font-weight: 700px;
+	margin-left: 15px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	width: 220px;
+}
+
+.prod-descr {
+	color: white;
+	font-weight: 300px;
+	margin-left: 15px;
+	width: 220px;
+	margin-bottom: 16px;
+}
+
+.prod-descr > p {
+	line-height: 25px;
+}
+
+.prod-type {
+	font-weight: 700;
+}
+
+.price {
+	color: #ffffff;
+	font-size: 48px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+sup {
+	font-size:x-large; 
+	vertical-align:super;
+}
+
+.details {
+	display: block;
+	margin: 0 auto;
+	width: 210px;
+	height: 50px;
+	margin-bottom: 15px;
+	border: 1px solid #ffffff;
+	background-color: #2c71b8;
+	opacity: 0.9;
+	color: white;
+	font-size: 21px;
+	font-weight: font-weight: 700;
+}
+
+.add-to-cart {
+	padding-right: 30px;
+	display: block;
+	margin: 0 auto;
+	width: 210px;
+	height: 50px;
+	margin-bottom: 15px;
+	border: 1px solid #ffffff;
+	background: url('images/icon (2).png') no-repeat;
+	background-position: 88% 50%;
+	background-color: #2c71b8;
+	opacity: 0.9;
+	color: white;
+	font-size: 21px;
+	font-weight: font-weight: 700;
 }
