@@ -41,6 +41,13 @@ body {
 	width: 25%;
 	border-left: 1px solid #2c71b8;
 }
+
+.menu li:nth-child(2) {
+	background: url(images/down-arrow_blue.png) no-repeat;
+	background-size: 12px;
+	background-position: 90% 50%;
+}
+
 .menu li:last-child {
 	border-right: 1px solid #2c71b8;
 }
@@ -67,11 +74,11 @@ body {
 .col-md-15 {
 	width: 15%;
 	position: relative;
+	right: -10px;
 }
 .basket {
 	width: 40px;
 	height: 40px;
-	background-color: white;
 	border-style: none;
 	background: url("images/icon (1).png") no-repeat;
 	background-position: center;
@@ -172,7 +179,10 @@ li:hover .submenu {
 	color: #2c71b8;
 }
 
-.menu > li:hover > a {
+.li_hov:hover > a {
+	background: url(images/down-arrow_white.png) no-repeat;
+	background-size: 12px;
+	background-position: 90% 50%;
 	color: white;
 	background-color: #2c71b8;
 }
@@ -194,6 +204,48 @@ li:hover .submenu {
 	opacity: 0.2;
 }
 
+.prod-main {
+	display: grid;
+	grid-template-rows: 164px 1fr;
+}
+
+.prod-nav {
+	display: grid;
+	grid-template-columns: 1fr 270px;
+}
+
+.page-nav {
+	height: 15px;
+	opacity: 0.5;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+	margin-left: 30px;
+	margin-top: 29px; 
+}
+
+.prod-line {
+	height: 47px;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 48px;
+	font-weight: 700;
+	margin-left: 30px;
+	margin-top: 21px;
+}
+
+.sort-by {
+	width: 270px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	background-color: #2c71b8;
+	margin-top: 64px;
+	color: white;
+	line-height: 40px;
+	padding-left: 20px;
+}
+
 .col-main9 {
 	display: grid;
 	grid-template-columns: 270px 270px 270px;
@@ -201,7 +253,6 @@ li:hover .submenu {
 	grid-column-gap: 30px;
 	grid-row-gap: 30px;
 	padding-left: 30px;
-	padding-top: 167px;
 }
 
 .prod-img {
