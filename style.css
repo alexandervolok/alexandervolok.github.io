@@ -199,9 +199,74 @@ li:hover .submenu {
 
 .col-main3 {
 	height: 843px;
+	border-right: 1px solid #ffffff;
+	background-color: rgba(255,255,255,0.2);
+}
+
+label {
+	position: relative;
+	display: flex;
+}
+
+label:before {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid white;
+	margin-right: 10px;
+	position: relative;
+	top: 13px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	background-color: white;
+}
+
+input[type="checkbox"]{
+	display: none;
+}
+
+.filter {
+	margin-left: 29px;
+	margin-top: 33px;
+}
+
+.filter > span {
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 40px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.filter > div {
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.filter_more {
+	text-align: center;
+	color: white;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 40px;
+}
+
+.filter_button {
+	width: 210px;
+	height: 50px;
 	border: 1px solid #ffffff;
-	background-color: #ffffff;
-	opacity: 0.2;
+	background-color: #2c71b8;
+	color: white;
+	font-size: 21px;
+	font-weight: 700;
+	display: block;
+	margin: 0 auto;
 }
 
 .prod-main {
@@ -274,6 +339,12 @@ li:hover .submenu {
 	background-position: center center;
 }
 
+.pic-scale:hover {
+	background: url('images/icon (6).png') no-repeat;
+	background-position: center center;
+	background-color: #2c71b8;
+}
+
 .like {
 	position: absolute;
 	right: 10px;
@@ -283,6 +354,12 @@ li:hover .submenu {
 	border: 1px solid #2c71b8;
 	background: url('images/icon (5).png') no-repeat;
 	background-position: center center;
+}
+
+.like:hover {
+	background: url('images/icon (7).png') no-repeat;
+	background-position: center center;
+	background-color: #2c71b8;
 }
 
 .prod-img > img {
@@ -296,8 +373,7 @@ li:hover .submenu {
 
 .col-main9 > div {
 	border: 1px solid #ffffff;
-	background-color: #2c71b8;
-	opacity: 0.8;
+	background-color: rgba(44,113,184,0.8);
 }
 .prod-name {
 	color: white;
@@ -353,6 +429,10 @@ sup {
 	font-weight: font-weight: 700;
 }
 
+.details:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+
 .add-to-cart {
 	padding-right: 30px;
 	display: block;
@@ -368,4 +448,8 @@ sup {
 	color: white;
 	font-size: 21px;
 	font-weight: font-weight: 700;
+}
+
+.add-to-cart:hover {
+	background-color: rgba(255,255,255,0.2);
 }
