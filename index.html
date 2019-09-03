@@ -6,6 +6,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 	<header class="header">
@@ -43,13 +45,22 @@
 					</div>
 					<div class="col-md-15">
 						<button class="basket" type="submit"></button>
-						<div class="ordered">4</div>	
+						<div class="ordered" id="products-count">0</div>	
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main class="main">
+		<div class="container-slider">
+			<div class="container">
+				<div class="slider">
+					<div>Slide #1</div>
+					<div>Slide #2</div>
+					<div>Slide #3</div>
+				</div>
+			</div>
+		</div>
 		<div class="main-container">
 			<div class="main-grid">
 				<div class="col-main3">
@@ -141,7 +152,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$599<sup>25</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -158,7 +173,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$1250<sup>99</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -175,7 +194,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$399<sup>50</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -192,7 +215,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$599<sup>25</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -209,7 +236,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$1250<sup>99</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -226,7 +257,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$399<sup>50</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -243,7 +278,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$599<sup>25</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -260,7 +299,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$1250<sup>99</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -277,7 +320,11 @@
 	  							<div class="prod-descr"><span class="prod-type">SCREEN SIZE:</span> 7 inches</div>
 	  							<div class="prod-descr"><span class="prod-type">RAM:</span> 1GB</div>
 	  							<div class="price">$399<sup>50</sup></div>
-	  							<div><button class="details" type="submit">MORE DETAILS</button></div>
+	  							<div class="quantity-input">
+	  								<button class="decrement-button">-</button>
+	  								<input type="text" value="1" readonly="true">
+	  								<button class="increment-button">+</button>
+	  							</div>
 	  							<div><button class="add-to-cart" type="submit">ADD TO CART</button></div>
 							</div>
 						</div>
@@ -290,7 +337,11 @@
 		</div>
 	</main>
 	<footer class="footer">
-		<div class="container">© Copyright 2017</div>
+		<div class="container">VLK | &copy; Copyright 2019</div>
 	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
